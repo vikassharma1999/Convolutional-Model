@@ -1,3 +1,4 @@
+#main file
 import numpy as np 
 def zero_pad(X,pad):
 	'''
