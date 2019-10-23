@@ -1,12 +1,6 @@
 import numpy as np 
 def zero_pad(X,pad):
-	'''
-	Argument:
-	X:-python numpy array of shape (m,n_H,n_W,n_C) representing a batch of m images
-	pad:-integer, amount of padding around each image on vertical and horizontal demensions
-    Returns:
-    X_pad:-padded image of shape (m,n_H+2*pad,n_W+2*pad,n_C)
-	'''
+	
 	X_pad=np.pad(X,((0,0),(pad,pad),(pad,pad),(0,0)),'constant')
 	return X_pad
 def conv_single_step(a_slice_prev,W,b):
