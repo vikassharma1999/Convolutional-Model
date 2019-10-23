@@ -1,3 +1,5 @@
+import warnings
+warnings.filterwarnings('ignore')
 import numpy as np 
 def zero_pad(X,pad):
 	'''
